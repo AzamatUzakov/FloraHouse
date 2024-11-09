@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+
+
+body {
+    background-color: antiquewhite;
+    height: 100vh;
+
+}
+
+
+main {
+    max-width: 1300px !important;
+    margin: 0 auto;
+    background-color: cadetblue;
+    padding: 30px 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+/* header img{
+    height: 100px;
+} */
+
+.pagesAdress {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.pagesAdress a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    transition: .4s ease;
+}
+
+.pagesAdress a:hover {
+    color: rgb(241, 109, 109);
+    transition: .4s ease;
+}
+
+
+.bodyLang {
+    margin-top: 30px;
+}
+
+.firstBl {
+    background-image: url(./img/Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    text-align: center;
+    position: relative;
+}
+
+.firstBl::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.firstBl>* {
+    position: relative;
+    z-index: 2;
+}
+
+.txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.txt h1 {
+    font-size: 50px;
+    color: #f1b5b8;
+}
+
+.txt p {
+    font-size: 22px;
+}
+
+
+.secondBl {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.secondBl h1 {
+    font-size: 50px;
+}
+
+.secondBl p {
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.secondBl button {
+    padding: 20px 0;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .4s ease;
+    background-color: #f1b5b8;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.secondBl button:hover {
+    background-color: rgb(63, 179, 63);
+    color: white;
+    transition: .4s ease;
+}
+
+.thirdBl {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.topFlBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item {
+    width: 400px;
+    height: 300px;
+    font-size: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.fouthBl {
+    margin-top: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fouthBl h1 {
+    font-size: 50px;
+}
+
+.Flbox {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Flbox .elem {
+    width: 300px;
+    background-color: #f1b5b8;
+    padding: 0 0 30px 0;
+}
+
+ .Flbox .elem img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px !important;
+}
+
+.Flbox .elem h6 {
+    font-size: 20px;
+
+}
+
+
+.Flbox .elem p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+.fivethBl {
+    text-align: center;
+
+}
+
+.fivethBl h1 {
+    font-size: 50px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image-item {
+    width: 100%;
+    height: 300px !important;
+    overflow: hidden;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100% !important;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    color: white !important;
+}
+footer {
+    padding: 50px 30px;
+    background-image: url(./img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 70px;
+    position: relative; /* Добавляем относительное позиционирование */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Устанавливаем затемнение */
+    z-index: 1;
+}
+
+footer > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hr {
+    border: 0;
+    height: 2px;
+    background-color: white !important;
+}
+
+.elem p {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+.midleBox p {
+    margin-left: -15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
