@@ -10,8 +10,8 @@
 
 
 body {
-    background-color: antiquewhite;
-    height: 100vh;
+/*     background-color: antiquewhite;
+ */    height: 100vh;
 
 }
 
@@ -19,8 +19,8 @@ body {
 main {
     max-width: 1300px !important;
     margin: 0 auto;
-    background-color: cadetblue;
-    padding: 30px 0;
+/*     background-color: cadetblue;
+ */    padding: 30px 0;
 }
 
 header {
@@ -282,4 +282,136 @@ footer a {
     text-decoration: none;
     margin-right: 10px;
     color: white;
+}
+
+/* Адаптивный дизайн для планшетов (до 768px) */
+@media (max-width: 768px) {
+    main {
+        padding: 20px 10px;
+    }
+
+    header {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagesAdress {
+        gap: 20px;
+    }
+
+    .txt h1 {
+        font-size: 40px;
+    }
+
+    .txt p {
+        font-size: 18px;
+    }
+
+    .secondBl h1, .fivethBl h1, .thirdBl h1, .fouthBl h1, .firstBl h1 {
+        font-size: 30px;
+    }
+
+    .secondBl p {
+        font-size: 18px;
+    }
+
+    .topFlBox {
+        flex-direction: column;
+    }
+
+    .item {
+        width: 80%;
+        height: auto;
+    }
+
+    .Flbox {
+        gap: 20px;
+    }
+
+    .Flbox .elem {
+        width: 100%;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    .midleBox{
+        margin: 30px 0 50px;
+    }
+
+    .firstBl{
+height: 100vh;
+    }
+}
+
+/* Адаптивный дизайн для мобильных телефонов (до 480px) */
+@media (max-width: 480px) {
+    .secondBl h1, .fivethBl h1, .thirdBl h1, .fouthBl h1, .firstBl h1 {
+        font-size: 20px !important;
+    }
+    header {
+        padding: 0 10px;
+    }
+
+    .pagesAdress a {
+        font-size: 15px;
+    }
+
+    /* .txt h1 {
+        font-size: 30px;
+    } */
+
+    .txt p {
+        font-size: 12px;
+    }
+
+    .secondBl h1 {
+        font-size: 30px;
+    }
+
+    .secondBl p {
+        font-size: 16px;
+    }
+
+    .secondBl button {
+        padding: 15px 0;
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .topFlBox {
+       
+        gap: 15px;
+    }
+
+    .item {
+        width: 90%;
+        height: auto;
+    }
+
+    .Flbox {
+        display: block;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .fivethBl h1 {
+        font-size: 30px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
 }
